@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    
+    
+    <title>ATM MANAGEMENT</title>
+</head>
+
+<body>
+    <div class="banner">
+        <div class="navbar">
+        
+        
+          
+                <ul>
+                    <li><a href="#screen">HOME</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="ser">SERVICE</a></li>
+                    <li><a href="#">CONTACT US </a></li>
+                </ul>
+            </div>
+                <div class="container">
+                    <div class="screen">
+                        <h1>ATM Management System</h1>
+                        <div id="display">
+                            <p>Welcome!</p>
+                        </div>
+                        <form id="pinForm">
+                            <label for="pin">Enter PIN:</label>
+                            <input type="password" id="pin" name="pin" maxlength="4">
+                            <br>
+                            <button type="button" onclick="validatePIN()">Enter</button>
+                        </form>
+                        <div id="options" class="hidden">
+                            <button onclick="checkBalance()">Check Balance</button>
+                            <button onclick="withdraw()">Withdraw</button>
+                            <button onclick="deposit()">Deposit</button>
+                            <button onclick="logout()">Logout</button>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="info">
+                    <p>
+                       <h3>Allowing customers to perform quick self-service transactions such as deposits, cash withdrawals, bill payments, and <br> transfers between accounts 
+                        The majority of the Indian banks' withdrawal limit per day ranges between Rs. 20,000 to Rs. 50,000  <br>from an ATM. In addition, the maximum ATM withdrawal limit per day depends on your account type and banking specifics.</h3>
+                       
+                    </p>
+
+                </div>
+
+    </div>
+
+    <div class="ser">
+        <div class="box check-balance">
+            <h2>CHECK BALANCE</h2>
+            <p>The account balance is the net amount available after all deposits and credits have been balanced with any charges or debits.</p>
+        </div>
+        <div class="box withdraw">
+            <h2>WITHDRAW</h2>
+            <p>Take Money Out at an ATM. One of the quickest ways to withdraw money from a savings account is at an ATM.</p>
+        </div>
+        <div class="box deposit">
+            <h2>DEPOSIT</h2>
+            <p>You can deposit the money into a bank account and held there until you need it.</p>
+        </div>
+    </div>
+            
+    <section>
+        <div class="contact-section">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name..">
+    
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your email..">
+    
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Write your message.."></textarea>
+    
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    <div class="social-sidebar">
+        <a href="#" class="google"><i class="fab fa-google"></i></a>
+        <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="contact"><i class="fas fa-envelope"></i></a>
+    </div>
+
+
+   
+ 
+            <script src="server.js"></script>
+
+    
+</body>
+</html>
